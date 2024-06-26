@@ -12,5 +12,5 @@ void launch_custom_device_memcpy(T *output, const T *input, size_t n, cudaStream
 template <typename T>
 void launch_custom_device_memcpy_shared_memory(T *output, const T *input, size_t n, cudaStream_t stream);
 
-template <typename T>
+template <typename T, typename R>
 void launch_custom_device_memcpy_optimized(T *output, const T *input, size_t n, cudaStream_t stream);

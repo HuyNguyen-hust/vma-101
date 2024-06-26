@@ -16,6 +16,8 @@ add_library(cuda_copy
     SHARED
     official_device_memcpy.cu
     custom_device_memcpy.cu
+    custom_device_memcpy_shared_memory.cu
+    custom_device_memcpy_optimized.cu
     profile_utils.cu
     cuda_utils.cu
 )

@@ -12,7 +12,6 @@ void launch_official_device_memcpy(T *output, const T *input, size_t n, cudaStre
 }
 
 // explicit instantiation
-
 template void launch_official_device_memcpy<int8_t>(int8_t *output, const int8_t *input, size_t n, cudaStream_t stream);
 template void launch_official_device_memcpy<int16_t>(int16_t *output, const int16_t *input, size_t n, cudaStream_t stream);
 template void launch_official_device_memcpy<int32_t>(int32_t *output, const int32_t *input, size_t n, cudaStream_t stream);
